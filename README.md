@@ -1,6 +1,9 @@
 # Volatility2Kali
 # Volatility2 installation on Kali linux
 
+sudo apt-get update 
+sudo apt-get -y install python2.7
+#sudo apt-get -y install python3.9.2
 
 sudo su
 python --version 
