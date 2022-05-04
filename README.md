@@ -8,12 +8,12 @@ sudo apt-get -y install python3.9.2
 sudo apt-get -y install pcregrep libpcre++-dev python-dev python2-dev -y
 
 ## set python2.7 as the default version
-sudo su
-python --version 
-update-alternatives --list python 
-update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 
-update-alternatives --install /usr/bin/python python /usr/bin/python3.9 2 
-update-alternatives --config python  
+    sudo su
+    python --version 
+    update-alternatives --list python 
+    update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 
+    update-alternatives --install /usr/bin/python python /usr/bin/python3.9 2 
+    update-alternatives --config python  
 #type number 1 and enter
 python --version
 #now you will see default python is version 2.x
@@ -55,3 +55,11 @@ pip2 install certifi chardet construct distorm3==3.4.4 Django django-developer-p
 
 python vol.py
 
+## How to deploy   
+This project is build on python 3.6. Ensure installed on system, rest follow as,
+
+    apt-get install p7zip-full libfuzzy-dev libpulse-dev  (sudo if required)
+    git clone https://github.com/iAbdullahMughal/d-scan.git
+    cd d-scan
+    pip3 install requirements.txt (sudo if required)
+    python3 app.py
