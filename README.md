@@ -72,3 +72,11 @@
     cd impfuzzy/pyimpfuzzy/
     sudo python2 setup.py install
 
+## Install Volatility 2 mandiant Fireeye windows 10 ( it is better for win 10 versions till 2020)
+    cd ~/
+    git clone https://github.com/mandiant/win10_volatility.git
+    cd win10_volatility
+    setup.py build
+    setup.py install
+    setup.py
+    python vol.py
