@@ -61,9 +61,10 @@
     cd ~/
     git clone https://github.com/volatilityfoundation/volatility.git
     cd volatility
-    setup.py
-    setup.py build
-    setup.py install
+    chmod +x setup.py
+    sudo ./setup.py
+    sudo ./setup.py build
+    sudo ./setup.py install
     python vol.py
     
 ## Install impfuzzy
@@ -76,7 +77,8 @@
     cd ~/
     git clone https://github.com/mandiant/win10_volatility.git
     cd win10_volatility
-    setup.py build
-    setup.py install
-    setup.py
+    chmod +x setup.py
+    sudo ./setup.py build
+    sudo ./setup.py install
+    sudo ./setup.py
     python vol.py
