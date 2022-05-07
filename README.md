@@ -60,7 +60,12 @@
 ## Install Volatility 2
     cd ~/
     git clone https://github.com/volatilityfoundation/volatility.git
-    cd volatility
+    git clone https://github.com/mandiant/win10_volatility.git # it is better with more profiles from fireeye
+
+    #cd volatility
+    cd win10_volatility #it is better 
+    chmod +x Makefile
+    ./Makefike
     chmod +x setup.py
     sudo ./setup.py
     sudo ./setup.py build
